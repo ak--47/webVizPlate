@@ -22,7 +22,8 @@
     var gainNode = ctx.createGain();
     analyzer.fftSize = 64;
     ctx.sampleRate = 44100;
-    console.log('FFT SIZE: '+ analyzer.fftSize + '  SAMPLE RATE: ' + ctx.sampleRate + '  BIN COUNT: ' +analyzer.frequencyBinCount)
+    var rate = (ctx.sampleRate / analyzer.fftSize)
+    console.log('FFT SIZE: '+ analyzer.fftSize + '  SAMPLE RATE: ' + ctx.sampleRate + '  BIN COUNT: ' +analyzer.frequencyBinCount + '  RATE of CHANGE: '+ rate)
 
  		
 
@@ -46,6 +47,7 @@
 	// 0 -  hZ  = frequencyDate[0 - ]
 	// 0 -  hZ  = frequencyDate[0 - ]
 	
+	// to do
 	var sub;
 	var lows;
 	var lowMid;
