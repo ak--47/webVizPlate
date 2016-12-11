@@ -1,0 +1,14 @@
+{
+  "name": "akanalyser",
+  "version": "1.0.0",
+  "description": "audio analysiser on the back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web-audio-analyser": "^2.0.1"
+  }
+}
